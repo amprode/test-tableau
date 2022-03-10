@@ -49,8 +49,9 @@ console.log("This is working!");
     var i = 0;
 
     //"http://localhost:8889/data.rivm.nl/covid-19/COVID-19_aantallen_gemeente_cumulatief.json", => PARA FUNCIONE EN EL SIMULADOR
+    //"https://data.rivm.nl/covid-19/COVID-19_aantallen_gemeente_cumulatief.json", => URL 
     $.getJSON(
-      "https://data.rivm.nl/covid-19/COVID-19_aantallen_gemeente_cumulatief.json",
+      "data.json",
       function (resp) {
         // Iterate over the JSON object
         for (i = 0, len = resp.length; i < len; i++) {
